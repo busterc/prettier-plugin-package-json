@@ -16,8 +16,8 @@ $ npm install --save-dev prettier @buster/prettier-plugin-package-json
 
 ISC © [Buster Collings]()
 
-[npm-image]: https://badge.fury.io/js/prettier-plugin-package-json.svg
-[npm-url]: https://npmjs.org/package/prettier-plugin-package-json
+[npm-image]: https://badge.fury.io/js/@buster/prettier-plugin-package-json.svg
+[npm-url]: https://npmjs.org/package/@buster/prettier-plugin-package-json
 [travis-image]: https://travis-ci.com/busterc/prettier-plugin-package-json.svg?branch=master
 [travis-url]: https://travis-ci.com/busterc/prettier-plugin-package-json
 [daviddm-image]: https://david-dm.org/busterc/prettier-plugin-package-json.svg?theme=shields.io
