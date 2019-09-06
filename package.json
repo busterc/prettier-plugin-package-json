@@ -1,0 +1,79 @@
+{
+  "name": "prettier-plugin-package-json",
+  "description": "Prettier plugin formats package.json using prettier-package-json",
+  "license": "ISC",
+  "author": "Buster Collings <busterc@gmail.com>",
+  "repository": "busterc/prettier-plugin-package-json",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "prettier": ">= 1.13"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-plugin-json": "^1.4.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.5",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "prettier-package-json": "^2.1.0"
+  },
+  "keywords": [
+    "format",
+    "order",
+    "package",
+    "package.json",
+    "prettier",
+    "prettier-plugin",
+    "prettify",
+    "sort"
+  ],
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier",
+      "json"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
+    ]
+  }
+}
