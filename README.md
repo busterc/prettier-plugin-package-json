@@ -9,7 +9,7 @@ Keys in `package.json` will be sorted in an [opinionated order](https://github.c
 ## Installation
 
 ```sh
-$ npm install --save-dev prettier prettier-plugin-package-json
+$ npm install --save-dev prettier @buster/prettier-plugin-package-json
 ```
 
 ## License

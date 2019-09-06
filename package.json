@@ -1,5 +1,5 @@
 {
-  "name": "prettier-plugin-package-json",
+  "name": "@buster/prettier-plugin-package-json",
   "description": "Prettier plugin formats package.json using prettier-package-json",
   "license": "ISC",
   "author": "Buster Collings <busterc@gmail.com>",
